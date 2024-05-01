@@ -1,0 +1,1 @@
+Ψ$iteration$iteration<NOiteration∫Σi∫0,m∫a[i]+b[i]*w$iteration$=d$iteration$

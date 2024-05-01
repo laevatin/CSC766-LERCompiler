@@ -1,0 +1,1 @@
+Γk∫2,NK∫Γj∫2,NJ∫Γi∫2,NI∫Γm∫0,NM∫(1-z$k$)*u(m,i,j,1)+z$k$*u(m,i,j,NK)=pz

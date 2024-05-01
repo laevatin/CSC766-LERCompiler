@@ -1,0 +1,1 @@
+Γk∫2,NK∫Γj∫2,NJ∫Γi∫2,NI∫Γm∫0,NM∫(1-x$i$)*u(m,1,j,k)+x$i$*u(m,NI,j,k)=px

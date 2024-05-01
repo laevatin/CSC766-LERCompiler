@@ -1,0 +1,1 @@
+Σinter∫0,iter∫Σj∫0,N∫b[j]=a[2*i]

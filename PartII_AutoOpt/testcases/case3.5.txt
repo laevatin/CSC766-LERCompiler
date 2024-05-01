@@ -1,0 +1,1 @@
+Γk∫2,NK∫Γj∫2,NJ∫Γi∫2,NI∫Γm∫0,NM∫(1-y$j$)*u(m,i,1,k)+y$j$*u(m,i,NJ,k)=py
