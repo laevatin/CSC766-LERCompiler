@@ -11,7 +11,7 @@ make -j
 By changing the CFLAGS in the Makefile, one could apply different optimization levels. 
 
 | Task              | -O0 Time(s) | -O0 w/Opt Time(s) | -O3 Time(s) | -O3 w/Opt Time(s) |
-|-------------------|--------------|------------------|--------------|------------------|
+|-------------------|-------------|-------------------|-------------|-------------------|
 | bgd               | 3.846742     | 3.846742       | 0.529367     | 0.529367       |
 | ccsd_multisize    | 52.711799    | 0.058377       | 4.668965     | 0.000924       |
 | ccsd_onesize      | 193.096414   | 14.385481      | 9.692131     | 1.039084       |
@@ -34,7 +34,7 @@ javac Glory*.java
 javac Glory.java DirectiveListener.java LEROptimizeListener.java
 ```
 
-I implemented the LER optimizer in the `LEROptimizeListener.java` file as a listener. I implemented one optimization that finds the constant redundant loops that no array access is dependent on. It utilizes the relLoops sets described in the paper. Now it works for the ccsd_multisize case. For an input:
+I implemented the LER optimizer in the `LEROptimizeListener.java` file as a listener. I implemented one optimization that removes the constant redundant loops that no array access is dependent on. It utilizes the relLoops sets described in the paper. Now it works for the ccsd_multisize case. For an input:
 
 ```
 Γa∫0,V∫Γb∫0,V∫Γc∫0,V∫Γi∫0,O∫Γj∫0,O∫Γk∫0,O∫Γe∫0,V∫Γm∫0,1000∫T2[c,e,i,j]*O2[a,b,e,k]=X[a,b,c,i,j,k]
