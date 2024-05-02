@@ -90,13 +90,8 @@ public class LEROptimizeListener extends GloryBaseListener {
     }
 
     @Override
-    public void enterStatement(GloryParser.StatementContext ctx) {
-        System.out.println("Statement entered.");
-    }
-
-    @Override
     public void exitStatement(GloryParser.StatementContext ctx) {
-        System.out.println("Statement exited.");
+        // System.out.println("Statement exited.");
 
         // update loop type
         for (int i = 0; i < loopList.size(); i++) {
@@ -148,13 +143,6 @@ public class LEROptimizeListener extends GloryBaseListener {
     }
 
     @Override
-    public void enterR(GloryParser.RContext ctx) {
-        super.enterR(ctx);
-        System.out.println("enterR: " + ctx.getText());
-
-    }
-
-    @Override
     public void enterFactor(GloryParser.FactorContext ctx) {
         super.enterFactor(ctx);
         // System.out.println("enterFactor: " + ctx.getText());
@@ -190,14 +178,9 @@ public class LEROptimizeListener extends GloryBaseListener {
     }
 
     @Override
-    public void enterConditionExpression(GloryParser.ConditionExpressionContext ctx) {
-        System.out.println("Condition expression: " + ctx.getText());
-    }
-
-    @Override
     public void exitL(GloryParser.LContext ctx) {
         loopCount--;
-        System.out.println("Exiting loop. Remaining loops: " + loopCount);
+        // System.out.println("Exiting loop. Remaining loops: " + loopCount);
     }
 
     private String idFilter(String string) {

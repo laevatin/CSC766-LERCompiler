@@ -26,8 +26,8 @@ public class Glory {
 
             // Walk it and attach our listener
             ParseTreeWalker walker = new ParseTreeWalker();
-            DirectiveListener listener = new DirectiveListener();
-            walker.walk(listener, drinkSentenceContext);
+            // DirectiveListener listener = new DirectiveListener();
+            // walker.walk(listener, drinkSentenceContext);
             LEROptimizeListener optimizeListener = new LEROptimizeListener();
             walker.walk(optimizeListener, drinkSentenceContext);
             
