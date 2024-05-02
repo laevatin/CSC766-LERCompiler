@@ -27,7 +27,7 @@ The original and optimized LER formula is in the formula.pdf.
 
 ## Part II - Compiler Optimization
 
-To compile the code, one could use the following command:
+The environment could be set with `source setup_env.sh`. Please modify the `setup_env.sh` file to correct absolute paths. To compile the code, one could use the following command:
 
 ```bash
 javac Glory*.java
